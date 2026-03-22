@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ChocoChef | Luxury Chocolate Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="luxury-header">
+            <div class="container header-container">
+                <div class="logo-area">
+                    <i class="fas fa-crown crown-icon"></i>
+                    <h1 class="brand-name">ChocoChef</h1>
+                </div>
+                <div class="header-tagline">
+                    <span>Batna - Algeria</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- PRODUCTS SECTION -->
+            <section id="productsSection" class="section-products">
+                <div class="container">
+                    <div class="section-title">
+                        <span class="gold-accent">—</span>
+                        <h2>Nos créations</h2>
+                        <span class="gold-accent">—</span>
+                    </div>
+                    
+                    <!-- Dough category -->
+                    <div class="category-block">
+                        <div class="category-heading">
+                            <i class="fas fa-mortar-pestle"></i>
+                            <h3>عجينة الطلي</h3>
+                          
+                        </div>
+                        <div class="products-grid">
+                            <div class="product-card">
+                                <div class="card-gold-border"></div>
+                                <div class="product-icon"><i class="fas fa-weight-hanging"></i></div>
+                                <h4 class="product-name">عجينة الطلي <span class="size-badge">2 kg</span></h4>
+                                <div class="quantity-control">
+                                    <label for="qty_dough_2kg">Quantité</label>
+                                    <input type="number" id="qty_dough_2kg" class="qty-input" min="0" value="0" step="1">
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-gold-border"></div>
+                                <div class="product-icon"><i class="fas fa-weight-hanging"></i></div>
+                                <h4 class="product-name">عجينة الطلي <span class="size-badge">3 kg</span></h4>
+                                <div class="quantity-control">
+                                    <label for="qty_dough_3kg">Quantité</label>
+                                    <input type="number" id="qty_dough_3kg" class="qty-input" min="0" value="0" step="1">
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-gold-border"></div>
+                                <div class="product-icon"><i class="fas fa-weight-hanging"></i></div>
+                                <h4 class="product-name">عجينة الطلي <span class="size-badge">10 kg</span></h4>
+                                <div class="quantity-control">
+                                    <label for="qty_dough_10kg">Quantité</label>
+                                    <input type="number" id="qty_dough_10kg" class="qty-input" min="0" value="0" step="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chocolate discs category -->
+                    <div class="category-block">
+                        <div class="category-heading">
+                            <i class="fas fa-chocolate-bar"></i>
+                            <h3>بيبيت <span class="discs-sub">(Chocolate discs)</span></h3>
+                        </div>
+                        <div class="products-grid">
+                            <div class="product-card">
+                                <div class="card-gold-border"></div>
+                                <div class="product-icon"><i class="fas fa-candy-cane"></i></div>
+                                <h4 class="product-name">Milk chocolate <span class="type-badge">بيبيت حليب</span></h4>
+                                <div class="quantity-control">
+                                    <label for="qty_choc_milk">Quantité</label>
+                                    <input type="number" id="qty_choc_milk" class="qty-input" min="0" value="0" step="1">
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-gold-border"></div>
+                                <div class="product-icon"><i class="fas fa-candy-cane"></i></div>
+                                <h4 class="product-name">Dark chocolate <span class="type-badge">بيبيت داكن</span></h4>
+                                <div class="quantity-control">
+                                    <label for="qty_choc_dark">Quantité</label>
+                                    <input type="number" id="qty_choc_dark" class="qty-input" min="0" value="0" step="1">
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-gold-border"></div>
+                                <div class="product-icon"><i class="fas fa-candy-cane"></i></div>
+                                <h4 class="product-name">White chocolate <span class="type-badge">بيبيت أبيض</span></h4>
+                                <div class="quantity-control">
+                                    <label for="qty_choc_white">Quantité</label>
+                                    <input type="number" id="qty_choc_white" class="qty-input" min="0" value="0" step="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="continue-wrapper">
+                        <button id="continueOrderBtn" class="btn-gold-primary">
+                            <span>Continue Order</span> <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ORDER SUMMARY & CUSTOMER FORM SECTION (hidden initially) -->
+            <section id="orderSection" class="section-order" style="display: none;">
+                <div class="container order-container">
+                    <div class="order-card">
+                        <div class="order-header">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h2>Order summary</h2>
+                            <button id="backToProductsBtn" class="btn-ghost-gold"><i class="fas fa-chevron-left"></i> Edit cart</button>
+                        </div>
+                        <div id="orderSummaryList" class="order-summary-list">
+                            <!-- dynamic summary items appear here -->
+                        </div>
+                        <div class="divider-gold"></div>
+                        <div class="customer-form">
+                            <h3><i class="fas fa-user-astronaut"></i> Your details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>First name</label>
+                                    <input type="text" id="firstName" class="form-control" placeholder="Mohamed">
+                                </div>
+                                <div class="form-group">
+                                    <label>Last name</label>
+                                    <input type="text" id="lastName" class="form-control" placeholder="Benali">
+                                </div>
+                            </div>
+                            <div class="form-group full-width">
+                                <label>Phone number <span class="gold-star">*</span></label>
+                                <input type="tel" id="phoneNumber" class="form-control" placeholder="+213 5XX XX XX XX">
+                            </div>
+                        </div>
+                        <button id="confirmOrderBtn" class="btn-gold-primary btn-confirm">
+                            <i class="fas fa-check-circle"></i> Confirm order
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="luxury-footer">
+            <div class="container footer-container">
+                <p><i class="fas fa-copyright"></i> ChocoChef — L'art du chocolat algérien</p>
+                <div class="footer-gold"></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
